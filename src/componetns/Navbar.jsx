@@ -1,12 +1,12 @@
 
-import {styles} from './styles';
+import {styles} from '../styles.js';
 import {navLinks} from "../constants/index.js";
 import {logo, menu, close} from '../assets'
 import {Link} from "react-router-dom";
 import {useState} from "react";
 
 const Navbar = () => {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState('');
 
     return (
         <nav className={`
@@ -24,6 +24,21 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" className="w-9 h-9 object-contain"/>
                     <p className="text-white text-[18px] font-bold cursor-pointer">Adrian <span className="sm:block hidden">| Javascript Mastery</span></p>
                 </Link>
+                <ul className="list-none hidden sm:flex flex-row gap-10">
+                    {
+                        navLinks.map((link) => (
+                            <li
+                                key={link.id}
+                                className={`${active === link.title 
+                                    ? 'text-white' 
+                                    : 'text-secondary'
+                                    }`}
+                            >
+                                <a href={`#${link.id}`}>{link.title}</a>
+                            </li>
+                        ))
+                    }
+                </ul>
             </div>
         </nav>
     )
