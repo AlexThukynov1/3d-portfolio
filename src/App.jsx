@@ -1,11 +1,9 @@
-import './App.css'
-
 function App() {
 
   return (
-    <>
-
-    </>
+    <div>
+      3d developer portfolio
+    </div>
   )
 }
 
