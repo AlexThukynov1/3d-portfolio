@@ -29,10 +29,12 @@ const Navbar = () => {
                         navLinks.map((link) => (
                             <li
                                 key={link.id}
-                                className={`${active === link.title 
+                                className={`${
+                                    active === link.title 
                                     ? 'text-white' 
-                                    : 'text-secondary'
-                                    }`}
+                                    : 'text-black-100'
+                                    } hover:text-white text-[18px]
+                                    font-medium cursor-pointer`}
                             >
                                 <a href={`#${link.id}`}>{link.title}</a>
                             </li>
