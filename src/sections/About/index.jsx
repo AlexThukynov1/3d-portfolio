@@ -4,6 +4,7 @@ import {styles} from '../../styles.js'
 import {services} from "../../constants/index.js";
 import {fadeIn, textVariant} from '../../utils/motion.js'
 import ServiceCard from "../../componetns/ServiceCard.jsx";
+import {SectionWrapper} from "../../hoc";
 
 const About = () => {
     return (
@@ -33,4 +34,4 @@ const About = () => {
     )
 }
 
-export default About
+export default SectionWrapper(About, "about");
