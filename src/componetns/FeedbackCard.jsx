@@ -1,5 +1,6 @@
 import {motion} from "framer-motion";
 import {fadeIn} from '../utils/motion.js'
+import person from '../assets/person.png'
 
 const FeedbackCard = ({index, testimonial, name, designation, company, image}) => {
     return (
@@ -23,9 +24,9 @@ const FeedbackCard = ({index, testimonial, name, designation, company, image}) =
                     </p>
 
                     <img
-                        src={image}
+                        src={image || person}
                         alt={`feedback-by-${name}`}
-                        className="w-10 h-10 rounded-full onject-cover"
+                        className="w-10 h-10 rounded-full object-cover"
                     />
                 </div>
             </div>
