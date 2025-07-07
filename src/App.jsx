@@ -4,7 +4,7 @@ import Hero from "./sections/Hero/index.jsx";
 import About from "./sections/About/index.jsx";
 import Experience from "./sections/Experience/index.jsx";
 import Tech from "./componetns/Tech.jsx";
-import Works from "./componetns/Works.jsx";
+import Index from "./sections/Works/index.jsx";
 import Feedback from "./sections/Feedback/index.jsx";
 import Contact from "./sections/Contact/index.jsx";
 import StarsCanvas from "./componetns/StarsCanvas.jsx";
@@ -22,7 +22,7 @@ function App() {
               <About />
               <Experience/>
               <Tech/>
-              <Works/>
+              <Index/>
               <Feedback/>
               <div className="relatie z-0">
                   <Contact/>
