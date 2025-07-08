@@ -7,7 +7,7 @@ import Tech from "./componetns/Tech.jsx";
 import Index from "./sections/Works/index.jsx";
 import Feedback from "./sections/Feedback/index.jsx";
 import Contact from "./sections/Contact/index.jsx";
-import StarsCanvas from "./componetns/StarsCanvas.jsx";
+import {StarsCanvas} from "../src/canvas/index.js";
 
 function App() {
 
